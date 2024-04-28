@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <title>Hala.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="hala.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="jscripts.js"></script>
+</head>
+<body>
+    <div class="logo-section">
+        <div class="logo-placement">
+            <img src="./logo.png" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--1st-column-->
+            <div class="col-md-7 clr">
+                <div class="invite">
+                    <p class="hi">
+                        HELLO!<br>I AM JAD SAAB,
+                    </p>
+                    <img src="./Group 63.png" alt="">
+                    <p class="inv">
+                        INVITING YOU TO CELEBRATE TOGETHER MY BIRTHDAY PARTY
+                    </p>
+                </div>
+                <hr class="middle-hr">
+                <div class="info">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="info-txt">
+                                <span class="info-title">Date:<br></span>
+                                22 November 2021
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="info-txt">
+                                <span class="info-title">Place:<br></span>
+                                name of the venue
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p class="info-txt">
+                                <span class="info-title">Location:<br></span>
+                                information comes here
+                            </p>
+                            <div class="center">
+                                <a class="map">view google map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-here">
+                    <input class="input-text" type="text" placeholder="if you have additional comment or a note please add it here" name="" id="">
+                </div>
+            </div>
+            <!--2nd-column-->
+            <div class="col-md-5 padding-rows">
+            <!--1st row-->    
+                <div class="row chng">
+                    <div class="col-md-12">
+                        <div class="presence">
+                            <p class="presence-txt">
+                                <span class="presence-title">
+                                    YOUR PRESENCE IS MUCH APPRECIATED
+                                </span><br>
+                                please send us your confirmation by just sending
+                                your name and number of attendies
+                            </p>
+                        </div>
+                        <div class="type">
+                            <p class="btn-upper-info">
+                                Name
+                            </p>
+                            <input class="full-width-btn" type="text" name="" id="">
+                            <p class="btn-upper-info">
+                                Number of attendies
+                            </p>
+                            <div class="btn-text">
+                                <!--<span id="numberPlace" class="num-one">1</span>-->
+                                <input class="inc-dec" value="1" id="demoInput" type="number" min="0" >
+                                <button class="minus" id="minus" onclick="decrement()" >-</button>
+                                <button class="plus" id="plus" onclick="increment()">+</button>
+                            </div>
+                        </div>
+                        <form action="/action_page.php">
+                            <div class="submit-btn">
+                                <input class="submit" type="submit" value="Submit" name="" id="submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            <!--2nd row-->
+                <div class="row fin">
+                    <div class="col-md-12 final-center">
+                        <img src="./Group 47.png" alt="">
+                        <p class="final-text">Available on Apple Store & Google Play</p>
+                        <img class="over" src="./Rectangle 37.png" alt="">
+                        <img class="over-1" src="./Rectangle 37.png" alt="">
+                        <img class="over-2" src="./Rectangle 37.png" alt="">
+                        <img class="circle-img-1st" src="./Group 64.png" alt="">
+                        <img class="circle-img" src="./Group 65.png" alt="">
+                        <img class="circle-img" src="./Group 66.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function increment() {
+           document.getElementById('demoInput').stepUp();
+        }
+        function decrement() {
+           document.getElementById('demoInput').stepDown();
+        }
+     </script>
+</body>
+</html>
